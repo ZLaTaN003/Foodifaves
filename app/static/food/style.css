@@ -1,0 +1,42 @@
+body{
+    background-color: silver;
+}
+.custom {
+    text-decoration: none;
+    margin-right: 15px;
+    color: #fff;
+    transition: color 0.2s; 
+    font-size: 18px;
+
+    
+    &:hover {
+        color: grey; 
+    }
+}
+
+.custom1{
+    margin-right: 40px;
+}
+
+.hello{
+    font-size: 30px;
+    margin-left: 20px;
+    
+}
+
+h1.display-4 {
+    color: navy; 
+  }
+
+  .card-body h5 a {
+    text-decoration: none;
+    color: cornflowerblue; 
+  }
+  
+  .card-body h5 a:hover {
+    color: steelblue ; 
+  }
+  
+  .form-field {
+    margin-bottom: 20px;
+  }

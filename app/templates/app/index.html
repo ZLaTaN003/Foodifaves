@@ -1,0 +1,41 @@
+{% extends "app/base.html" %}
+{% load static %}
+
+{% block title %}Home{% endblock  %}
+
+{% block csspart %}
+
+</script>
+
+{% endblock  %}
+
+{% block content %}
+<div class="container header">
+  <div class="text-center mb-4">
+    <h1 class="display-4">FoodiFaves</h1>
+    <img src="{% static 'logo.png' %}" alt="Food Logo" height="83"  width="100">
+  
+  </div>
+  <div class="row">
+    {% for item in items %}
+      <div class="col-md-6">
+        <div class="card mb-4">
+          <div class="row no-gutters">
+            <div class="col-md-4">
+              <img src="{{ item.item_img.url }}" class="card-img" alt="{{ item.item_name }}" height="250" width="300">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title"><a href="{% url 'detail' item.id %}">{{ item.item_name }}</a></h5>
+                <p class="card-text">{{ item.item_description }}</p>
+                <p class="card-text">Posted by: <span style="color: #007bff; font-weight: bold;">{{ item.user.username }}</span></p>
+                <p class="card-text"><strong>Price: ${{ item.item_price }}</strong></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</div>
+{% endblock %}
