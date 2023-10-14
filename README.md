@@ -5,9 +5,6 @@
 
 Welcome to Foodifaves, your go-to destination for all things delicious!
 
-## About
-
-Foodifaves is a community for food enthusiasts to share and discover their favorite dishes and culinary experiences. Whether you're a home cook, a foodie, or a restaurant connoisseur, Foodifaves has something for you.
 
 ## Features
 
